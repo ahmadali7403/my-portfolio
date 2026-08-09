@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion'
-import { HiArrowDown, HiDownload, HiEye } from 'react-icons/hi'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
-import SEO from '../components/SEO'
-import Button from '../components/ui/Button'
-import { siteConfig } from '../data/site'
+import { motion } from "framer-motion";
+import { HiArrowDown, HiDownload, HiEye } from "react-icons/hi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import SEO from "../components/SEO";
+import Button from "../components/ui/Button";
+import { siteConfig } from "../data/site";
 
 export default function Home() {
   return (
@@ -35,7 +35,7 @@ export default function Home() {
               Welcome to my portfolio
             </motion.p>
             <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-              Hi, I&apos;m{' '}
+              Hi, I&apos;m{" "}
               <span className="gradient-text">{siteConfig.name}</span>
             </h1>
             <h2 className="mb-6 text-2xl font-medium text-slate-600 sm:text-3xl dark:text-slate-400">
@@ -48,16 +48,23 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button to="/contact">Contact Me</Button>
-              <Button href="../../public/Ahmad_Ali_Resume.pdf" target="_blank" variant="secondary">
+              <Button
+                href="../../public/Ahmad_Ali_CV.pdf"
+                target="_blank"
+                variant="secondary"
+              >
                 <HiEye className="h-5 w-5" />
                 View CV
               </Button>
-              <Button  onClick={() => {
-    const link = document.createElement("a");
-    link.href = "/Ahmad_Ali_Resume.pdf";
-    link.download = "Ahmad_Ali_Resume.pdf";
-    link.click();
-  }} variant="secondary">
+              <Button
+                onClick={() => {
+                  const link = document.createElement("a");
+                  link.href = "/Ahmad_Ali_CV.pdf";
+                  link.download = "Ahmad_Ali_CV.pdf";
+                  link.click();
+                }}
+                variant="secondary"
+              >
                 <HiDownload className="h-5 w-5" />
                 Download CV
               </Button>
@@ -118,16 +125,16 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-3">
           {[
             {
-              title: 'Frontend Focus',
-              desc: 'Crafting pixel-perfect, responsive interfaces with React and Tailwind CSS.',
+              title: "Frontend Focus",
+              desc: "Crafting pixel-perfect, responsive interfaces with React and Tailwind CSS.",
             },
             {
-              title: 'Clean Code',
-              desc: 'Writing maintainable, reusable components following best practices.',
+              title: "Clean Code",
+              desc: "Writing maintainable, reusable components following best practices.",
             },
             {
-              title: 'Always Learning',
-              desc: 'Staying current with modern web technologies and industry trends.',
+              title: "Always Learning",
+              desc: "Staying current with modern web technologies and industry trends.",
             },
           ].map((item, i) => (
             <motion.div
@@ -149,5 +156,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }
