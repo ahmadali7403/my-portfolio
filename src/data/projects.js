@@ -6,9 +6,9 @@ export const projects = [
       "A responsive personal portfolio built with React.js and Tailwind CSS to showcase my frontend development skills, projects, and technical experience.",
     technologies: ["React", "JavaScript", "Tailwind CSS", "HTML5"],
     demoUrl: "https://my-portfolio-dun-alpha-37.vercel.app/",
-    githubUrl: "https://github.com/ahmadali7403/instagram.git",
-    gradient: "from-yellow-400 via-pink-500 to-purple-600",
-    emoji: "📱",
+    githubUrl: "https://github.com/ahmadali7403/my-portfolio.git",
+    gradient: "from-indigo-600 via-purple-600 to-cyan-500",
+    emoji: "🌐",
   },
   {
     id: "instagram-clone",
