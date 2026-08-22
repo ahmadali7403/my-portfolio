@@ -49,7 +49,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-4">
               <Button to="/contact">Contact Me</Button>
               <Button
-                href="../../public/Ahmad_Ali_CV.pdf"
+                href="/Ahmad_Ali_CV.pdf"
                 target="_blank"
                 variant="secondary"
               >
